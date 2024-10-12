@@ -1,0 +1,65 @@
+---
+import LogoIcon from './icons/Logo.astro'
+import LocationIcon from './icons/Location.astro'
+import TelephoneIcon from './icons/Telephone.astro'
+---
+
+<footer>
+  <div class="information">
+    <LogoIcon />
+    <div>
+      <div class="info-location">
+        <span>
+          <LocationIcon style="margin-right: 5px;" />
+        </span>
+        <div>Calle 25 de mayo entre Mayor Rocha y Ecuador</div>
+      </div>
+      <div class="info-telephone">
+        <TelephoneIcon style="margin-right: 5px;" />
+        <div>+591 75494907</div>
+      </div>
+    </div>
+  </div>
+  <p class="create-by">
+    ©2024. Creado por ____________ Términos y condiciones | Políticas de
+    privacidad
+  </p>
+</footer>
+
+<style>
+  footer {
+    background-color: rgb(0, 0, 0, 1);
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .create-by {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .info-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .info-telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+</style>
