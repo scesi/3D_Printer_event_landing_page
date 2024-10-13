@@ -9,17 +9,14 @@ import Logo from '../assets/images/3D-PRINT.png'
   <div class="flex-grow"></div>
 
   <div class="navbar-btn">
-    <button id="burger-menu" class="relative h-10 w-10 focus:outline-none">
+    <button class="burger-menu">
       <span class="burger-bar"></span>
       <span class="burger-bar"></span>
       <span class="burger-bar"></span>
     </button>
   </div>
 
-  <ul
-    id="navbar-menu"
-    class="absolute right-0 top-[100%] hidden h-full w-screen flex-col items-center justify-center gap-[10px] bg-black md:static md:mt-0 md:flex md:w-[218px] md:flex-row md:justify-between md:gap-0"
-  >
+  <ul class="navbar-menu hidden">
     <li>
       <a class="navbar-option" href="."> Inicio </a>
     </li>
@@ -65,15 +62,21 @@ import Logo from '../assets/images/3D-PRINT.png'
   .navbar-option {
     @apply font-[16px] text-blue-300;
   }
+  .burger-menu {
+    @apply relative h-10 w-10 focus:outline-none;
+  }
+  .navbar-menu {
+    @apply absolute right-0 top-[100%] h-full w-screen flex-col items-center justify-center gap-[10px] bg-black md:static md:mt-0 md:flex md:w-[218px] md:flex-row md:justify-between md:gap-0;
+  }
 </style>
 
 <script>
-  const burgerMenu = document.getElementById('burger-menu')
-  const navBarMenu = document.getElementById('navbar-menu')
+  const burgerMenu = document.querySelector('.burger-menu')
+  const navBarMenu = document.querySelector('.navbar-menu')
 
   burgerMenu!.addEventListener('click', () => {
-    burgerMenu!.classList.toggle('open')
     navBarMenu?.classList.toggle('hidden')
     navBarMenu?.classList.toggle('flex')
+    burgerMenu!.classList.toggle('open')
   })
 </script>
