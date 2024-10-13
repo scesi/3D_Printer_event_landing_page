@@ -1,0 +1,79 @@
+---
+import { Image } from 'astro:assets'
+import Logo from '../assets/images/3D-PRINT.png'
+---
+
+<nav class="navbar">
+  <Image class="logo" src={Logo} alt="3D Print Expo 2024 logo" />
+
+  <div class="flex-grow"></div>
+
+  <div class="navbar-btn">
+    <button id="burger-menu" class="relative h-10 w-10 focus:outline-none">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+  </div>
+
+  <ul
+    id="navbar-menu"
+    class="absolute right-0 top-[100%] hidden h-full w-screen flex-col items-center justify-center gap-[10px] bg-black md:static md:mt-0 md:flex md:w-[218px] md:flex-row md:justify-between md:gap-0"
+  >
+    <li>
+      <a class="navbar-option" href="."> Inicio </a>
+    </li>
+    <li>
+      <a class="navbar-option" href="./about"> Acerca de </a>
+    </li>
+  </ul>
+</nav>
+<style>
+  .navbar {
+    @apply relative flex h-[99px] bg-black px-[80px] py-[12px];
+  }
+  .logo {
+    @apply h-[75px] w-[238px];
+  }
+  .navbar-btn {
+    @apply flex items-center md:hidden;
+  }
+  .navbar-option {
+    @apply font-[16px] text-blue-300;
+  }
+  .burger-bar {
+    @apply absolute left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-md bg-[#f2762e] transition-all duration-300;
+  }
+  .burger-bar:first-child {
+    @apply top-3;
+  }
+  .burger-bar:nth-child(2) {
+    @apply top-5;
+  }
+  .burger-bar:last-child {
+    @apply top-7;
+  }
+  .open .burger-bar:first-child {
+    @apply top-5 rotate-45;
+  }
+  .open .burger-bar:nth-child(2) {
+    @apply opacity-0;
+  }
+  .open .burger-bar:last-child {
+    @apply top-5 -rotate-45;
+  }
+  .navbar-option {
+    @apply font-[16px] text-blue-300;
+  }
+</style>
+
+<script>
+  const burgerMenu = document.getElementById('burger-menu')
+  const navBarMenu = document.getElementById('navbar-menu')
+
+  burgerMenu!.addEventListener('click', () => {
+    burgerMenu!.classList.toggle('open')
+    navBarMenu?.classList.toggle('hidden')
+    navBarMenu?.classList.toggle('flex')
+  })
+</script>
