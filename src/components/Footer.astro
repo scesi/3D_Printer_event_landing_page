@@ -1,0 +1,33 @@
+---
+import LogoIcon from './icons/Logo.astro'
+import LocationIcon from './icons/Location.astro'
+import TelephoneIcon from './icons/Telephone.astro'
+---
+
+<footer class="w-full pt-[2.5rem] pb-[1rem] bg-[rgb(0,0,0,1)]">
+  <div class="container mx-auto">
+    <div class="flex justify-between mx-[2rem] gap-6 md:block md:mx-0 md:gap-0">
+      <div class="flex justify-between mx-0 sm:mx-[3rem]">
+        <LogoIcon class="w-full sm:w-full md:w-auto" />
+        <div class="hidden md:block">
+          <div
+            class="flex my-auto text-white text-center text-[16px] font-semibold"
+          >
+            <span><LocationIcon class="me-1" /></span>
+            Calle 25 de mayo entre Mayor Rocha y Ecuador
+          </div>
+          <div class="flex justify-center items-center">
+            <TelephoneIcon class="me-1" />
+            <div class="text-white text-center text-[16px] font-semibold">
+              +591 75494907
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-white text-[10px] font-normal my-auto md:pt-3">
+        ©2024. Creado por SCESI Términos y condiciones | Políticas de
+        privacidad
+      </p>
+    </div>
+  </div>
+</footer>
