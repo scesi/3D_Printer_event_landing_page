@@ -10,27 +10,19 @@ import mapPinWhite from '../assets/icons/map-pin-white.svg'
     <h2>Ubicación</h2>
   </div>
 
-  <hr class="divider" />
+  <div class="divider"></div>
 
-  <div class="location-card">
+  <div class="location">
     <div class="location-info">
-      <div>
-        <p class="location-title">¿Dónde encontrarnos?</p>
-
-        <p class="mt-[20px]">
+      <p class="location-title">¿Dónde encontrarnos?</p>
+      <p class="location-body">
+        <span class="block">
           Este evento se llevara a cabo en el CBA Centro Boliviano Americano.
-        </p>
-        <p>¡Te esperamos!</p>
-      </div>
-
+        </span>
+        <span class="block"> ¡Te esperamos! </span>
+      </p>
       <div class="address">
-        <Image
-          src={mapPinWhite}
-          alt="puntero de mapa"
-          class="mr-[10px]"
-          height={20}
-          width={24}
-        />
+        <Image src={mapPinWhite} alt="puntero de mapa" class="" />
         <p class="address-details">
           Calle 25 de mayo entre Mayor Rocha y Ecuador
         </p>
@@ -56,24 +48,28 @@ import mapPinWhite from '../assets/icons/map-pin-white.svg'
     @apply h-[1px] bg-[#0762D9];
   }
 
-  .location-card {
+  .location {
     @apply mt-[15px] flex flex-col items-center md:flex-row;
   }
 
   .location-info {
-    @apply h-[181px] w-[300px] rounded-t-lg bg-[#0762D9] px-[5%] py-[5%] text-white shadow-lg md:h-[389px] md:w-[409px] md:rounded-l-lg md:rounded-t-none;
+    @apply h-[181px] w-[300px] rounded-t-lg bg-[#0762D9] px-[5%] py-[3%] text-white shadow-lg md:h-[389px] md:w-[409px] md:rounded-l-lg md:rounded-t-none;
   }
 
   .location-title {
-    @apply text-[20px] font-bold drop-shadow-lg;
+    @apply mb-[10px] text-[14px] font-bold drop-shadow-lg md:mb-[20px] md:text-[20px];
+  }
+
+  .location-body {
+    @apply mb-[14px] text-[12px] drop-shadow-lg md:mb-[110px] md:text-[16px];
   }
 
   .address {
-    @apply mt-[90px] flex-1;
+    @apply flex gap-[10px];
   }
 
   .address-details {
-    @apply font-bold drop-shadow-lg;
+    @apply text-[12px] font-bold drop-shadow-lg md:text-[16px];
   }
 
   .map {
