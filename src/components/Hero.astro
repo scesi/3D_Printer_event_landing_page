@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets'
+import HeroImg from '../assets/images/hero.webp'
+---
+
+<!-- Create hero presentationm en imagen poner texto-->
+<div class="h-1/2">
+  <Image src={HeroImg} alt="Cochabamba 3D Print Expo 2024" class="w-full" />
+  <div
+    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center"
+  >
+    <div class="gid grid-cols-2">
+      <h1 class="text-4xl font-bold text-white">
+        Cochabamba 3D Print Expo 2024
+      </h1>
+      <div class="border-2 text-[36px] text-[#EFBD24] shadow-md">
+        CENTRO BOLIVIANO AMERICANO
+      </div>
+      <div>COCHABAMBA - BOLIVIA</div>
+      <div class="text-lg text-white">
+        Prepárate para el gran evento de impresión 3D en Cochabamba. Disfruta de
+        dos días de conocimiento, mejoras de equipos y conexión con expertos.
+      </div>
+      <div class="border-2 text-[58px] text-white">22-23 NOV</div>
+    </div>
+  </div>
+</div>
