@@ -7,19 +7,28 @@
 ## Instalation steps
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com
    cd project-name
 
+   ```
+
 2. Install the dependencies:
    ```bash
    npm i
+   ```
 
 ## Commands
+
 - Format code
-   ```bash
-   npm run format
+
+  ```bash
+  npm run format
+
+  ```
 
 - Excecute linter
-   ```bash
-   npm run lint
+  ```bash
+  npm run lint
+  ```
