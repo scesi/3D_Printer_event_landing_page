@@ -1,16 +1,12 @@
 ---
-import { Image } from 'astro:assets'
-import HeroImg from '../assets/images/hero.webp'
+
 ---
 
 <!-- Create hero presentationm en imagen poner texto-->
 <div class="hero mx-auto w-full 2xl:container">
-  <Image
-    class="h-auto w-full object-contain"
-    src={HeroImg}
-    alt="Cochabamba 3D Print Expo 2024"
-  />
-  <div class="mx-auto bg-blue-600 p-4 md:p-20">
+  <div
+    class="mx-auto bg-[url('http://localhost:4321/_image?href=%2F%40fs%2FD%3A%2FSCESI%2F3D_Printer_event_landing_page%2Fsrc%2Fassets%2Fimages%2Fhero.webp%3ForigWidth%3D1440%26origHeight%3D750%26origFormat%3Dwebp&f=webp')] bg-cover bg-center bg-no-repeat p-4 sm:p-16 md:px-20 md:py-[230px]"
+  >
     <div class="grid grid-cols-2">
       <div>
         <div
