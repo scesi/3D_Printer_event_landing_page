@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets'
+
+import activitiesData from '../data/activities.json'
+import type { Activity } from '../interfaces'
+
+const activities: Activity[] = activitiesData
+---
+
+<section class="activities">
+  {
+    activities.map((activity) => (
+      <article class="card">
+        <img src={activity.imgPath} alt={activity.title} />
+        <h3 class="card-title">{activity.title}</h3>
+        <p class="card-description">{activity.description}</p>
+      </article>
+    ))
+  }
+</section>
+<style>
+  .activities {
+    @apply my-[20px] flex flex-row flex-wrap items-center justify-center gap-10;
+  }
+  .card {
+    @apply box-border flex w-[336px] flex-col rounded-lg px-[4%] py-[5%] shadow-2xl md:h-[580px] md:w-[593px];
+  }
+  .card-title {
+    @apply text-[24px] font-bold;
+  }
+  .card-description {
+    @apply text-[20px];
+  }
+</style>
