@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Retos de impresión 3D",
+        "description": "Pondremos a prueba tu creatividad y habilidades técnicas en  diferentes desafíos de impresión. Trabajarás en equipo para superar estos retos,  aprendiendo en el proceso.",
+        "imgPath": "images/retos-impresion-3d.png"
+    },
+    {
+        "title": "Mejora y reparación de impresoras",
+        "description": "Si tienes una impresora que necesita ajustes o  reparación, ¡este es el momento perfecto! Habrá expertos disponibles para guiarte en  el mantenimiento y mejora de tu equipo.",
+        "imgPath": "images/mejora-reparacion-impresoras.png"
+    },
+    {
+        "title": "Ensamble y venta de impresoras 3D",
+        "description": "Compra tu impresora y ensámblala durante la Pernocta con ayuda de expertos. Si ya tienes una impresora, trae tu equipo y aprende a usarlo.",
+        "imgPath": "images/esamble-venta.png"
+    },
+    {
+        "title": " Compartir Conocimiento",
+        "description": " Este espacio está diseñado para que los participantes  intercambien conocimientos, desde técnicas avanzadas hasta  consejos prácticos para mejorar tus impresiones.",
+        "imgPath": "images/compartir-conocimiento.png"
+    },
+    {
+        "title": "Charlas y talleres nocturnos",
+        "description": " Durante la noche, organizaremos mini charlas y talleres  enfocados en diversos temas, como la optimización de tus impresiones, diseño 3D y  nuevos materiales.",
+        "imgPath": "images/charlas-talleres.png"
+    },
+    {
+        "title": "Ambiente de comunidad",
+        "description": "La pernocta es un espacio ideal para conocer a otros  apasionados de la impresión 3D, hacer networking y colaborar en proyectos.",
+        "imgPath": "images/ambiente-comunidad.png"
+    }
+]
