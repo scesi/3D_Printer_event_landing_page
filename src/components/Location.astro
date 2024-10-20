@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets'
+import mapPinBlue from '../assets/icons/map-pin-blue.svg'
+import mapPinWhite from '../assets/icons/map-pin-white.svg'
+---
+
+<section class="mb-[100px]">
+  <div class="section-title">
+    <Image src={mapPinBlue} alt="puntero de mapa" height={40} width={33} />
+    <h2>Ubicación</h2>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="location">
+    <div class="location-info">
+      <p class="location-title">¿Dónde encontrarnos?</p>
+      <p class="location-body">
+        <span class="block">
+          Este evento se llevara a cabo en el CBA Centro Boliviano Americano.
+        </span>
+        <span class="block"> ¡Te esperamos! </span>
+      </p>
+      <div class="address">
+        <Image src={mapPinWhite} alt="puntero de mapa" class="" />
+        <p class="address-details">
+          Calle 25 de mayo entre Mayor Rocha y Ecuador
+        </p>
+      </div>
+    </div>
+
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.46975269676!2d-66.15905652411298!3d-17.389229883498327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e37409b542a979%3A0x4a3ed36468ec3b58!2sCentro%20Boliviano%20Americano!5e0!3m2!1ses-419!2sbo!4v1728871251427!5m2!1ses-419!2sbo"
+      style="border:0;"
+      allowfullscreen="false"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<style>
+  .section-title {
+    @apply flex text-[28px] text-[#0762D9];
+  }
+
+  .divider {
+    @apply h-[1px] bg-[#0762D9];
+  }
+
+  .location {
+    @apply mt-[15px] flex flex-col items-center md:flex-row;
+  }
+
+  .location-info {
+    @apply h-[181px] w-[300px] rounded-t-lg bg-[#0762D9] px-[5%] py-[3%] text-white shadow-lg md:h-[389px] md:w-[409px] md:rounded-l-lg md:rounded-t-none;
+  }
+
+  .location-title {
+    @apply mb-[10px] text-[14px] font-bold drop-shadow-lg md:mb-[20px] md:text-[20px];
+  }
+
+  .location-body {
+    @apply mb-[14px] text-[12px] drop-shadow-lg md:mb-[110px] md:text-[16px];
+  }
+
+  .address {
+    @apply flex gap-[10px];
+  }
+
+  .address-details {
+    @apply text-[12px] font-bold drop-shadow-lg md:text-[16px];
+  }
+
+  .map {
+    @apply h-[300px] rounded-b-lg shadow-lg md:h-[389px] md:flex-1 md:rounded-b-none md:rounded-r-lg;
+  }
+</style>
