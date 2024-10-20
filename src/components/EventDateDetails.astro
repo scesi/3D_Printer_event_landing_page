@@ -1,0 +1,52 @@
+---
+import { Image } from 'astro:assets'
+
+import Polyhedron from '../assets/images/polyhedron.png'
+---
+
+<section class="date-details">
+  <Image class="polyhedron" src={Polyhedron} alt="polyhedron" />
+  <div>
+    <h2 class="date-details-title">
+      22 y 23 de noviembre de 2024, Cochabamba - Bolivia
+    </h2>
+    <!-- TODO anñadir typography -->
+    <p class="date-details-content">
+      Es el encuentro perfecto para makers, emprendedores y entusiastas de la
+      impresión 3D. Durante dos días, podrás participar en charlas, talleres y
+      actividades colaborativas que te permitirán aprender nuevas técnicas,
+      mejorar tus equipos y conectar con expertos del sector.
+    </p>
+    <div class="buttons-cotainer">
+      <a class="button btn-blue" href=".">Inscribirse</a>
+      <a class="button btn-yellow" href=".">Convocatoria</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .date-details {
+    @apply mx-auto my-[20px] flex w-[70%] flex-col items-center gap-10 lg:flex-row;
+  }
+  .date-details-title {
+    @apply mb-[10px] text-center text-[32px] font-bold text-[#0762D9] drop-shadow-lg md:mb-[20px];
+  }
+  .date-details-content {
+    @apply mb-[20px] text-[20px];
+  }
+  .buttons-cotainer {
+    @apply flex flex-row;
+  }
+  .button {
+    @apply m-auto flex h-[55px] w-[200px] items-center justify-center rounded-lg text-[20px] font-bold text-white;
+  }
+  .btn-blue {
+    @apply bg-[#29A5F2];
+  }
+  .btn-yellow {
+    @apply bg-[#F2B705];
+  }
+  .polyhedron {
+    @apply h-[260px] w-[299px];
+  }
+</style>
