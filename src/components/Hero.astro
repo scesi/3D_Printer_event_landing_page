@@ -1,8 +1,14 @@
 ---
-
+import { Image } from 'astro:assets'
+import HeroImg from '../assets/images/hero.webp'
 ---
 
 <div class="hero mx-auto w-full 2xl:container">
+  <!-- <Image
+    src={HeroImg}
+    alt="Evento 3D printer"
+    class="h-full w-full object-cover"
+  /> -->
   <div class="mx-auto max-h-max px-2 md:px-4 lg:p-16 lg:px-20">
     <div
       class="grid grid-cols-2 pb-[50px] pt-[135px] md:pt-[320px] lg:pt-[250px] xl:pt-[240px]"
@@ -19,7 +25,7 @@
           COCHABAMBA - BOLIVIA
         </div>
         <p
-          class="font-alexandria pt-4 text-center text-[12px] leading-[15.57px] text-white md:pt-14 md:text-[30px] md:font-[600] md:leading-[36.57px]"
+          class="pt-4 text-center font-alexandria text-[12px] leading-[15.57px] text-white md:pt-14 md:text-[30px] md:font-[600] md:leading-[36.57px]"
         >
           Prepárate para el gran evento de impresión 3D en Cochabamba. Disfruta
           de dos días de conocimiento, mejoras de equipos y conexión con
@@ -27,7 +33,7 @@
         </p>
       </div>
       <div
-        class="font-alexandria ms-auto mt-[70px] h-max rounded-md border-[4px] border-solid bg-[#1864CE] p-2 px-3 text-center text-[22px] font-[800] leading-[22.7px] text-white md:p-2 md:px-9 md:text-[58px] md:leading-[70.7px] xl:bg-inherit"
+        class="ms-auto mt-[70px] h-max rounded-md border-[4px] border-solid bg-[#1864CE] p-2 px-3 text-center font-alexandria text-[22px] font-[800] leading-[22.7px] text-white md:p-2 md:px-9 md:text-[58px] md:leading-[70.7px] xl:bg-inherit"
       >
         22-23 <br /> NOV
       </div>
@@ -37,7 +43,7 @@
 
 <style>
   .hero {
-    background: url('http://localhost:4321/_image?href=%2F%40fs%2FD%3A%2FSCESI%2F3D_Printer_event_landing_page%2Fsrc%2Fassets%2Fimages%2Fhero.webp%3ForigWidth%3D1440%26origHeight%3D750%26origFormat%3Dwebp&f=webp');
+    background: url('../assets/images/hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -46,7 +52,7 @@
   }
   @media (min-width: 325px) {
     .hero {
-      background: url('http://localhost:4321/_image?href=%2F%40fs%2FD%3A%2FSCESI%2F3D_Printer_event_landing_page%2Fsrc%2Fassets%2Fimages%2Fhero.webp%3ForigWidth%3D1440%26origHeight%3D750%26origFormat%3Dwebp&f=webp');
+      background: url('../assets/images/hero.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top;
