@@ -11,7 +11,7 @@ const activities: Activity[] = activitiesData
   {
     activities.map((activity) => (
       <article class="card">
-        <img src={activity.imgPath} alt={activity.title} />
+        <img class="card-img" src={activity.imgPath} alt={activity.title} />
         <h3 class="card-title">{activity.title}</h3>
         <p class="card-description">{activity.description}</p>
       </article>
@@ -20,10 +20,14 @@ const activities: Activity[] = activitiesData
 </section>
 <style>
   .activities {
-    @apply my-[20px] flex flex-row flex-wrap items-center justify-center gap-10;
+    @apply my-[20px] flex w-[100%] flex-row flex-wrap justify-between gap-10;
   }
   .card {
-    @apply box-border flex w-[336px] flex-col rounded-lg px-[4%] py-[5%] shadow-2xl md:h-[580px] md:w-[593px];
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    @apply box-border flex min-h-[50%] flex-col rounded-lg px-[4%] py-[5%] md:w-[47%];
+  }
+  .card-img {
+    @apply mb-[10px] h-[292px] rounded-lg;
   }
   .card-title {
     @apply text-[24px] font-bold;
