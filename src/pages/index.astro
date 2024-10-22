@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import NavBar from '../components/NavBar.astro'
-import Location from '../components/Location.astro'
 import Hero from '../components/Hero.astro'
+import Location from '../components/Location.astro'
+import Organizers from '../components/Organizers.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <Layout title="Cochabamba 3D Print Expo 2024">
@@ -13,6 +15,8 @@ import Hero from '../components/Hero.astro'
     <Hero />
     <div class="px-[10%]">
       <Location />
+      <Organizers />
     </div>
   </main>
+  <Footer />
 </Layout>
