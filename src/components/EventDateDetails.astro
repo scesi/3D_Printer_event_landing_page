@@ -4,7 +4,7 @@ import { Image } from 'astro:assets'
 import Polyhedron from '../assets/images/polyhedron.png'
 ---
 
-<section class="date-details">
+<section class="date-details lg:flex">
   <Image class="polyhedron" src={Polyhedron} alt="polyhedron" />
   <div>
     <h2 class="date-details-title">
@@ -26,7 +26,7 @@ import Polyhedron from '../assets/images/polyhedron.png'
 
 <style>
   .date-details {
-    @apply mx-auto my-[20px] flex w-[70%] flex-col items-center gap-10 lg:flex-row;
+    @apply my-[20px] ;
   }
   .date-details-title {
     @apply mb-[10px] text-center text-[32px] font-bold text-[#0762D9] drop-shadow-lg md:mb-[20px];
@@ -35,13 +35,13 @@ import Polyhedron from '../assets/images/polyhedron.png'
     @apply mb-[20px] text-[20px];
   }
   .buttons-cotainer {
-    @apply flex flex-row;
+    @apply flex flex-row justify-center;
   }
   .button {
-    @apply m-auto flex h-[55px] w-[200px] items-center justify-center rounded-lg text-[20px] font-bold text-white;
+    @apply flex h-[55px] w-[200px] items-center justify-center rounded-lg text-[20px] font-bold text-white;
   }
   .btn-blue {
-    @apply bg-[#29A5F2];
+    @apply bg-[#29A5F2] mr-3;
   }
   .btn-yellow {
     @apply bg-[#F2B705];
