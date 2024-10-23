@@ -4,7 +4,7 @@ import mapPinBlue from '../assets/icons/map-pin-blue.svg'
 import mapPinWhite from '../assets/icons/map-pin-white.svg'
 ---
 
-<section class="mb-[100px]">
+<section class="container mx-auto mb-[100px]">
   <div class="section-title">
     <Image src={mapPinBlue} alt="puntero de mapa" height={40} width={33} />
     <h2>Ubicación</h2>
@@ -53,7 +53,7 @@ import mapPinWhite from '../assets/icons/map-pin-white.svg'
   }
 
   .location-info {
-    @apply h-[181px] w-[300px] rounded-t-lg bg-[#0762D9] px-[5%] py-[3%] text-white shadow-lg md:h-[389px] md:w-[409px] md:rounded-l-lg md:rounded-t-none;
+    @apply h-[181px] w-[300px] rounded-tl-lg rounded-tr-lg bg-[#0762D9] px-[5%] py-[3%] text-white shadow-lg md:h-[389px] md:w-[409px] md:rounded-bl-lg md:rounded-tr-none;
   }
 
   .location-title {
@@ -73,6 +73,6 @@ import mapPinWhite from '../assets/icons/map-pin-white.svg'
   }
 
   .map {
-    @apply h-[300px] rounded-b-lg shadow-lg md:h-[389px] md:flex-1 md:rounded-b-none md:rounded-r-lg;
+    @apply h-[300px] rounded-bl-lg rounded-br-lg shadow-lg md:h-[389px] md:flex-1 md:rounded-bl-none md:rounded-tr-lg;
   }
 </style>
