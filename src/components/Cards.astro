@@ -1,5 +1,5 @@
 <section class="section-cards">
-   <article class="article-card">
+   <div class="div-card">
       <header class="header-title">
          <h2 class="card-title">Inscríbete Aquí</h2>
       </header>
@@ -10,9 +10,9 @@
          </p>
          <button class="button-card"> Inscribirse </button>
       </section>
-   </article>
+   </div>
 
-   <article class="article-card">
+   <div class="div-card">
       <header class="header-title">
          <h2 class="card-title">Información del evento</h2>
       </header>
@@ -21,17 +21,17 @@
          <p class="text-center text-base md:text-xl">Convocatoria del evento</p>
          <button class="button-card"> Más información </button>
       </section>
-   </article>
+   </div>
 </section>
 
 <style>
    /* Contenedor general de las tarjetas */
    .section-cards {
-      @apply flex flex-col items-center gap-6 p-4 md:flex-row md:justify-between md:p-8;
+      @apply flex flex-col items-center gap-6 py-4 md:flex-row md:justify-between md:p-8;
    }
 
    /* Estructura de las tarjetas */
-   .article-card {
+   .div-card {
       @apply flex w-full max-w-[580px] flex-1 flex-col justify-between rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 md:h-[300px];
       min-height: 0; /* Asegura que no se desborde */
    }
@@ -61,7 +61,7 @@
          @apply gap-8;
       }
 
-      .article-card {
+      .div-card {
          @apply w-[580px];
       }
 
