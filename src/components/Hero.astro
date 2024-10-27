@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets'
+import HeroImg from '../assets/images/hero.webp'
+---
+
+<div class="hero mx-auto w-full 2xl:container">
+  <!-- <Image
+    src={HeroImg}
+    alt="Evento 3D printer"
+    class="h-full w-full object-cover"
+  /> -->
+  <div class="mx-auto max-h-max px-2 md:px-4 lg:p-16 lg:px-20">
+    <div
+      class="grid grid-cols-2 pb-[50px] pt-[135px] md:pt-[320px] lg:pt-[250px] xl:pt-[240px]"
+    >
+      <div>
+        <div class="w-max border-b-[1px] border-[#ffffff]">
+          <p class="hero-tile ms-[2px] text-[14px]">
+            CENTRO BOLIVIANO AMERICANO
+          </p>
+        </div>
+        <div
+          class="leading-[34.13px]] font-alexandria text-[12px] font-[500] text-white md:text-[28px] md:font-[700]"
+        >
+          COCHABAMBA - BOLIVIA
+        </div>
+        <p
+          class="pt-4 text-center font-alexandria text-[12px] leading-[15.57px] text-white md:pt-14 md:text-[30px] md:font-[600] md:leading-[36.57px]"
+        >
+          Prepárate para el gran evento de impresión 3D en Cochabamba. Disfruta
+          de dos días de conocimiento, mejoras de equipos y conexión con
+          expertos.
+        </p>
+      </div>
+      <div
+        class="ms-auto mt-[70px] h-max rounded-md border-[4px] border-solid bg-[#1864CE] p-2 px-3 text-center font-alexandria text-[22px] font-[800] leading-[22.7px] text-white md:p-2 md:px-9 md:text-[58px] md:leading-[70.7px] xl:bg-inherit"
+      >
+        22-23 <br /> NOV
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero {
+    background: url('../assets/images/hero.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: -228px;
+    background-position-y: 0px;
+  }
+  @media (min-width: 325px) {
+    .hero {
+      background: url('../assets/images/hero.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  }
+  .hero-tile {
+    font-size: 16px;
+    font-family: 'alexandria', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #efbd24;
+    -webkit-text-stroke: 0.5px #ffd415;
+    text-shadow: -3px 4px 6px #0000004d;
+  }
+
+  @media (min-width: 768px) {
+    .hero-tile {
+      font-size: 36px;
+      font-family: 'alexandria', sans-serif;
+      font-weight: 500;
+      line-height: 43.88px;
+      text-align: center;
+      color: #efbd24;
+      -webkit-text-stroke: 2px #ffd415;
+      text-shadow: -3px 6px 6px #0000004d;
+    }
+  }
+</style>
