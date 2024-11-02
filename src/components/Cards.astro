@@ -1,39 +1,49 @@
 <section class="section-cards">
-   <article class="article-card">
+   <div class="div-card">
       <header class="header-title">
          <h2 class="card-title">Inscríbete Aquí</h2>
       </header>
 
       <section class="section-content">
-         <p class="text-center text-base md:text-xl">
+         <p class="text-center text-[14px] sm:text-base md:text-xl">
             ¡Te esperamos para compartir, <br /> aprender y crear juntos!
          </p>
-         <button class="button-card"> Inscribirse </button>
+         <a href="https://forms.gle/dBMQFU6UwscVm7aU8" target="_blank" rel="noopener noreferrer">
+            <button class="button-card">Inscribirse</button>
+         </a>
       </section>
-   </article>
+   </div>
 
-   <article class="article-card">
+   <div class="div-card">
       <header class="header-title">
          <h2 class="card-title">Información del evento</h2>
       </header>
 
       <section class="section-content">
-         <p class="text-center text-base md:text-xl">Convocatoria del evento</p>
-         <button class="button-card"> Más información </button>
+         <div class="items-center">
+            <p class="text-center text-[14px] sm:text-base md:mt-4 md:text-xl">Convocatoria del evento</p>
+         </div>
+         <a
+            href="https://drive.google.com/file/d/19oeHWxKRGfah9V_u8M3e28kdnLZ7gsK5/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+         >
+            <button class="button-card">Mas información</button>
+         </a>
       </section>
-   </article>
+   </div>
 </section>
 
 <style>
    /* Contenedor general de las tarjetas */
    .section-cards {
-      @apply flex flex-col items-center gap-6 p-4 md:flex-row md:justify-between md:p-8;
+      @apply flex flex-col items-center gap-6 py-4 md:flex-row md:justify-between md:py-8;
    }
 
    /* Estructura de las tarjetas */
-   .article-card {
-      @apply flex w-full max-w-[580px] flex-1 flex-col justify-between rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 md:h-[300px];
-      min-height: 0; /* Asegura que no se desborde */
+   .div-card {
+      @apply flex w-full max-w-[340px] flex-1 flex-col justify-between rounded-2xl bg-white shadow-2xl transition-transform hover:scale-105 md:h-[300px] md:max-w-[580px];
+      min-height: 0;
    }
 
    /* Título de la tarjeta */
@@ -45,14 +55,14 @@
       @apply mx-4 text-[20px] md:text-[28px];
    }
 
-   /* Contenido de la tarjeta */
+   /* Contenido de la tarjeta, usando justify-between */
    .section-content {
-      @apply flex flex-grow flex-col items-center justify-center gap-6 p-4;
+      @apply flex flex-grow flex-col items-center justify-between gap-6 p-4;
    }
 
-   /* Botones */
+   /* Botones centrados y ajustados al contenido */
    .button-card {
-      @apply mx-4 h-[54px] w-5/6 max-w-[360px] rounded-3xl bg-[#29A5F2] px-4 py-2 text-[18px] font-semibold text-white shadow-lg transition-colors hover:bg-[#6cb7e6] md:w-full;
+      @apply inline-flex w-[186px] items-center justify-center rounded-2xl bg-[#29A5F2] py-2 text-[16px] font-semibold text-white shadow-lg transition-colors hover:bg-[#6cb7e6] sm:px-10 sm:text-[18px] md:mb-6 xl:w-[360px];
    }
 
    /* Ajustes responsivos */
@@ -61,7 +71,7 @@
          @apply gap-8;
       }
 
-      .article-card {
+      .div-card {
          @apply w-[580px];
       }
 
