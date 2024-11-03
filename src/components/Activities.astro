@@ -20,7 +20,7 @@ const activities: Activity[] = activitiesData
 </section>
 <style>
   .activities {
-    @apply my-[20px] flex w-[100%] flex-row flex-wrap justify-between gap-10;
+    @apply my-[20px] flex w-[100%] flex-row flex-wrap justify-between gap-8 lg:gap-10;
   }
   .card {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
@@ -30,9 +30,9 @@ const activities: Activity[] = activitiesData
     @apply mb-[10px] h-[292px] rounded-lg;
   }
   .card-title {
-    @apply text-[24px] font-bold;
+    @apply text-[16px] font-bold sm:text-[24px];
   }
   .card-description {
-    @apply text-[20px];
+    @apply text-[14px] sm:text-[20px];
   }
 </style>
