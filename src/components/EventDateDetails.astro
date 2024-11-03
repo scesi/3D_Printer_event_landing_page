@@ -10,7 +10,6 @@ import Polyhedron from '../assets/images/polyhedron.png'
     <h2 class="date-details-title">
       22 y 23 de noviembre de 2024, Cochabamba - Bolivia
     </h2>
-    <!-- TODO anñadir typography -->
     <p class="date-details-content">
       Es el encuentro perfecto para makers, emprendedores y entusiastas de la
       impresión 3D. Durante dos días, podrás participar en charlas, talleres y
@@ -18,30 +17,36 @@ import Polyhedron from '../assets/images/polyhedron.png'
       mejorar tus equipos y conectar con expertos del sector.
     </p>
     <div class="buttons-cotainer">
-      <a class="button btn-blue" href=".">Inscribirse</a>
-      <a class="button btn-yellow" href=".">Convocatoria</a>
+      <a class="button btn-blue" href="https://forms.gle/dBMQFU6UwscVm7aU8"
+        >Inscribirse</a
+      >
+      <a
+        class="button btn-yellow"
+        href="https://drive.google.com/file/d/19oeHWxKRGfah9V_u8M3e28kdnLZ7gsK5/view?usp=drivesdk"
+        >Convocatoria</a
+      >
     </div>
   </div>
 </section>
 
 <style>
   .date-details {
-    @apply my-[20px] ;
+    @apply my-[20px];
   }
   .date-details-title {
-    @apply mb-[10px] text-center text-[32px] font-bold text-[#0762D9] drop-shadow-lg md:mb-[20px];
+    @apply mb-[10px] text-center text-[20px] font-bold text-[#0762D9] drop-shadow-lg sm:text-[32px] md:mb-[20px];
   }
   .date-details-content {
-    @apply mb-[20px] text-[20px];
+    @apply mb-[20px] text-[14px] sm:text-[20px];
   }
   .buttons-cotainer {
     @apply flex flex-row justify-center;
   }
   .button {
-    @apply flex h-[55px] w-[200px] items-center justify-center rounded-lg text-[20px] font-bold text-white;
+    @apply flex h-[55px] w-[200px] items-center justify-center rounded-lg text-[16px] font-bold text-white sm:text-[20px];
   }
   .btn-blue {
-    @apply bg-[#29A5F2] mr-3;
+    @apply mr-3 bg-[#29A5F2];
   }
   .btn-yellow {
     @apply bg-[#F2B705];
